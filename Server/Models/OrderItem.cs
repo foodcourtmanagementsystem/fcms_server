@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Server.Models
 {
@@ -32,5 +33,12 @@ namespace Server.Models
         [ForeignKey("UserId")]
         public virtual User? User { get; set; }
         public string UserId { get; set; }
+
+        [DataType(DataType.DateTime)]
+        public DateTime CreatedAt { get; set; }
+
+        [DataType(DataType.DateTime)]
+        public DateTime? UpdatedAt { get; set; }
+
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8mu3iOPIV1dxRjLC5IGoe0b4HRGDMo6nC+KF+A5zqjA=",
+  "Hash": "5lTd8eViF8J2lh8XkLb4zxq8rZOm6VC5Q+K/JieS9WE=",
   "Source": "Server",
   "BasePath": "_content/Server",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\image2_1c4f1e66-702e-48be-bf41-ae49bca304bb.png"
+    },
+    {
+      "Identity": "C:\\Works\\platforms\\fcms\\fcms_server\\Server\\wwwroot\\Image\\image2_29ae8fed-0241-48ee-a6f7-78acce407f35.png",
+      "SourceId": "Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Works\\platforms\\fcms\\fcms_server\\Server\\wwwroot\\",
+      "BasePath": "_content/Server",
+      "RelativePath": "Image/image2_29ae8fed-0241-48ee-a6f7-78acce407f35.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\image2_29ae8fed-0241-48ee-a6f7-78acce407f35.png"
     },
     {
       "Identity": "C:\\Works\\platforms\\fcms\\fcms_server\\Server\\wwwroot\\Image\\image2_8550af16-1343-48cc-9b31-fd25d834b849.png",
@@ -408,6 +425,23 @@
       "OriginalItemSpec": "wwwroot\\Image\\image3_adcc1957-3d0e-4033-b4cd-fac99d091006.jpg"
     },
     {
+      "Identity": "C:\\Works\\platforms\\fcms\\fcms_server\\Server\\wwwroot\\Image\\image3_b556f449-1dfa-49d4-99bc-b6e71a6cb0e3.jpg",
+      "SourceId": "Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Works\\platforms\\fcms\\fcms_server\\Server\\wwwroot\\",
+      "BasePath": "_content/Server",
+      "RelativePath": "Image/image3_b556f449-1dfa-49d4-99bc-b6e71a6cb0e3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\image3_b556f449-1dfa-49d4-99bc-b6e71a6cb0e3.jpg"
+    },
+    {
       "Identity": "C:\\Works\\platforms\\fcms\\fcms_server\\Server\\wwwroot\\Image\\image3_dd88c459-373b-4223-942f-ea70c8fa59d5.jpg",
       "SourceId": "Server",
       "SourceType": "Discovered",
@@ -593,6 +627,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\image6_6d505c72-2667-402f-a2f0-0aeb91497bbc.jpg"
+    },
+    {
+      "Identity": "C:\\Works\\platforms\\fcms\\fcms_server\\Server\\wwwroot\\Image\\image6_895ad5e7-6607-4fbc-99db-fa04cdaeceed.jpg",
+      "SourceId": "Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Works\\platforms\\fcms\\fcms_server\\Server\\wwwroot\\",
+      "BasePath": "_content/Server",
+      "RelativePath": "Image/image6_895ad5e7-6607-4fbc-99db-fa04cdaeceed.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\image6_895ad5e7-6607-4fbc-99db-fa04cdaeceed.jpg"
     },
     {
       "Identity": "C:\\Works\\platforms\\fcms\\fcms_server\\Server\\wwwroot\\Image\\image6_8f2cdd3c-173e-41b1-b07c-dfb69f479d5d.jpg",

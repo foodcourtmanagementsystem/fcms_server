@@ -40,11 +40,18 @@ namespace Server.Controllers
             var cartItems = await _context.CartItem.Where(ci => ci.CartSessionId == cartSessionId)
                                                     .Include(ci => ci.FoodItem).ToListAsync();
 
-
+            if(cartItems.Count() < 1)
+            {
+                return BadRequest();
+            }
             var amount = cartItems.Sum(ci => ci.FoodItem.Price * ci.Quantity) * 100; // in Paise
-
-            Console.WriteLine(amount);
-            Console.WriteLine(cartItems.Count());
+            if(amount < 1)
+            {
+                return BadRequest(new
+                {
+                    Error = "Amount can not be less than 1."
+                });
+            }
            
 
             var orderItems = new List<Models.OrderItem>();
@@ -55,14 +62,14 @@ namespace Server.Controllers
                     FoodItemId = cartItem.FoodItemId,
                     Quantity = cartItem.Quantity,
                     UserId = userId,
-                    Status = "The order has been created."
+                    Status = "The order has been created.",
+                    CreatedAt = DateTime.UtcNow
                 };
-                orderItems.Add(orderItem);
+                 orderItems.Add(orderItem);
                 _context.OrderItem.Add(orderItem);
                 _context.CartItem.Remove(cartItem);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
 
             var metaData = new Dictionary<string, string>();
             foreach(var orderItem in orderItems)
@@ -80,7 +87,8 @@ namespace Server.Controllers
 
             var service = new PaymentIntentService(_client);
             var paymentIntent = await service.CreateAsync(options);
-           
+        
+
             return Ok(new
             {
                 clientSecret = paymentIntent.ClientSecret
