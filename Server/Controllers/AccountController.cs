@@ -134,7 +134,7 @@ namespace Server.Controllers
             {
                 return BadRequest(new
                 {
-                    Error = "Try again!"
+                    Error = "Your account does not exist. Please sign up."
                 });
             }
 
@@ -142,7 +142,7 @@ namespace Server.Controllers
             if(!result.Succeeded)
             {
                 return BadRequest(new {
-                    Error = "Try again!"
+                    Error = "Your email or password is not valid. Try again!"
                 });
             }
 

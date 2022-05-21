@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -35,7 +36,7 @@ namespace Server.Controllers
                 return BadRequest();
           }
 
-            return Ok(await _context.FoodItem.Where(fi => fi.Title.Contains(query) || fi.Description.Contains(query)).Include(fi => fi.FoodCategory).ToListAsync());
+            return Ok(await _context.FoodItem.Include(fi => fi.FoodCategory).Where(fi => fi.Title.Contains(query) || fi.Description.Contains(query) || fi.FoodCategory.Title.Contains(query)).ToListAsync());
         }
 
        
